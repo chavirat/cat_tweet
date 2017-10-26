@@ -1,13 +1,21 @@
 {
-  "name": "cat-tweet",
+  "name": "cat_tweet",
   "version": "0.0.1",
   "description": "my first twitter streaming API app to build a simple web app that displays photos from cat- related tweets in real time",
   "dependencies": {
     "dotenv": "^4.0.0",
+    "ejs": "^2.5.7",
     "express": "^4.15.2",
-    "feathers-seeder": "^1.0.9",
-    "socket.io": "^2.0.4",
+    "express-ws": "^3.0.0",
     "twitter": "^1.7.1",
     "ws": "^3.2.0"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chavirat/cat_tweet"
+  },
+  "license": "MIT"
 }
