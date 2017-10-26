@@ -22,10 +22,7 @@ var client = new Twitter({
   consumer_secret: process.env[CONSUMER_SECRET],
   access_token_key: process.env[ACCESS_TOKEN_KEY],
   access_token_secret: process.env[ACCESS_TOKEN_SECRET]
-});
-  var OAuth = require('oauth');
-  var OAuth2 = OAuth.OAuth2;    
-
+});   
 
 var stream = client.stream('statuses/filter', 
 	{track: '#cat, #cats, #kitten, #kittie, #meow, #instacats, #instacat, #catsofinstagram, #catstagram, #cutecats, #kittycat'});
