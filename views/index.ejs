@@ -2,17 +2,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <style>
-    body, main {
-      margin: 0;
-      padding: 0;
-    }
-    #canvas {
-      display: block;
-      background-color: #eee;
-      background-image: url("http://www.technocrazed.com/wp-content/uploads/2015/11/HD-Galaxy-Wallpapers-Free-Download-110.jpg");
-    }
-  </style>
+  <link rel="stylesheet" href="public/css/styles.css">
   <title>Cats of Twitter</title>
 </head>
 <body>
@@ -78,7 +68,7 @@
       var ctx = canvas.getContext('2d');
       var cats = [];
 
-      var socket = new WebSocket('ws://localhost:8080');
+      var socket = new WebSocket('ws:https:\/\/cat-tweet.herokuapp.com\/');
 	      socket.onopen = function(evt) { onOpen(evt); };
           socket.onmessage = function(evt) { onMessage(evt); };
 		function onOpen (evt)

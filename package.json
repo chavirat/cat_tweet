@@ -2,6 +2,10 @@
   "name": "cat_tweet",
   "version": "0.0.1",
   "description": "my first twitter streaming API app to build a simple web app that displays photos from cat- related tweets in real time",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "dotenv": "^4.0.0",
     "ejs": "^2.5.7",
@@ -9,9 +13,6 @@
     "express-ws": "^3.0.0",
     "twitter": "^1.7.1",
     "ws": "^3.2.0"
-  },
-  "scripts": {
-    "start": "node server.js"
   },
   "repository": {
     "type": "git",

@@ -3,7 +3,7 @@ var app = express();
 var expressWs = require('express-ws')(app);
 // set the port of our application
 // process.env.PORT lets the port be set by Heroku
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 5000;
 require('dotenv').config();
 var Twitter = require('twitter');
 
@@ -61,5 +61,5 @@ app.ws('/', function(ws, req) {
 	});
 });
 app.listen(port, function() {
-    console.log('Our app is running on http://localhost:' + port);
+    console.log('Our app is running on port' + port);
 });
