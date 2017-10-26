@@ -6,11 +6,15 @@
   "scripts": {
     "start": "node server.js"
   },
+   "engines": {
+    "node": "6.10.2"
+  },
   "dependencies": {
     "dotenv": "^4.0.0",
     "ejs": "^2.5.7",
     "express": "^4.15.2",
     "express-ws": "^3.0.0",
+    "oauth": "^0.9.15",
     "twitter": "^1.7.1",
     "ws": "^3.2.0"
   },
@@ -18,5 +22,6 @@
     "type": "git",
     "url": "https://github.com/chavirat/cat_tweet"
   },
+  "author": "chavirat-burapadecha",
   "license": "MIT"
 }

@@ -78,7 +78,7 @@
       var ctx = canvas.getContext('2d');
       var cats = [];
 
-      var socket = new WebSocket('ws:https:\/\/cat-tweet.herokuapp.com\/');
+      var socket = new WebSocket('ws://localhost:5000');
 	      socket.onopen = function(evt) { onOpen(evt); };
           socket.onmessage = function(evt) { onMessage(evt); };
 		function onOpen (evt)
