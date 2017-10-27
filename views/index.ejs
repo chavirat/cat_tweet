@@ -77,8 +77,8 @@
       }, 100))
       var ctx = canvas.getContext('2d');
       var cats = [];
-
-      var socket = new WebSocket('ws://localhost:5000');
+      var HOST = location.origin.replace(/^http/, 'ws')
+      var socket = new WebSocket(HOST);
 	      socket.onopen = function(evt) { onOpen(evt); };
           socket.onmessage = function(evt) { onMessage(evt); };
 		function onOpen (evt)
